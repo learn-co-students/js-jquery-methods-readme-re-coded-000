@@ -1,26 +1,31 @@
-'use strict';
-function fancySchmancy() {
-  $('p#bacon').addClass("iAmFancy");
-  return $('.iAmFancy');
+function fancySchmancy(){
+  return $('#bacon').addClass("iAmFancy");
 }
-function addText(str) {
+
+function addText(str){
   return $('p:first-child + p').append(str);
 }
-function showDolphin() {
-  $('img#hidden').show()
+
+function showDolphin(){
+  $('#hidden').show();
 }
-function hideImage() {
-  $('img[alt="pie in face"]').hide()
+
+function hideImage(){
+  $('img[alt="pie in face"]').hide();
 }
-function fadeIt() {
-  $('div#favoorite-snacks').fadeIn();
+
+function fadeIt(){
+  $("#favorite-snacks").fadeIn();
 }
-function fadeItOut() {
+
+function fadeItOut(){
   $('p:first-child + p').fadeOut(0);
 }
-function findItByClass(selector) {
+
+function findItByClass(selector){
   return $(selector).hasClass("flatironLink");
 }
-function formValue() {
+
+function formValue(){
   return $('input:last').val();
 }
