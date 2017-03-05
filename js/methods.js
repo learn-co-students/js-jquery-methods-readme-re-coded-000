@@ -25,7 +25,7 @@ function fadeItOut() {
   $('p:last').fadeOut(0);
 }
 
-function findItByClas(selector) {
+function findItByClass(selector) {
   var find = $(selector).hasClass('flatironLink');
   return find;
 }
